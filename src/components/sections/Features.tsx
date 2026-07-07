@@ -1,9 +1,18 @@
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const courses = [
-  "Prompt Engineering",
-  "Data Analysis & Visualization",
-  "Workflow Automation",
+  {
+    title: "Prompt Engineering",
+    body: "Prompt engineering is the art of crafting precise instructions for AI models to produce accurate and high-quality outputs.",
+  },
+  {
+    title: "Data Analysis & Visualization",
+    body: "An AI data analysis and visualization skill is a set of programmable AI capabilities that automates the process of extracting, interpreting, and graphically representing data",
+  },
+  {
+    title: "Workflow Automation",
+    body: "AI workflow automation is the use of Artificial Intelligence to build repeatable systems that can reason, adapt, and make decisions mid-execution",
+  },
 ];
 
 export function Features() {
@@ -22,20 +31,14 @@ export function Features() {
           </h2>
         </Reveal>
 
-        <Stagger className="mt-14 grid gap-10 sm:grid-cols-3">
-          {courses.map((name, i) => (
-            <StaggerItem key={name}>
-              <div className="flex flex-col items-center gap-5 text-center">
-                <svg viewBox="0 0 100 90" className="h-20 w-20">
-                  <defs>
-                    <linearGradient id={`courseGrad-${i}`} x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#2C5FE0" />
-                      <stop offset="100%" stopColor="#0F2A5E" />
-                    </linearGradient>
-                  </defs>
-                  <polygon points="50,5 95,85 5,85" fill={`url(#courseGrad-${i})`} />
-                </svg>
-                <h3 className="text-lg font-semibold">{name}</h3>
+        <Stagger className="mt-14 grid gap-6 sm:grid-cols-3">
+          {courses.map((c) => (
+            <StaggerItem key={c.title}>
+              <div className="card-glow h-full rounded-2xl border border-line bg-surface/60 p-7">
+                <h3 className="text-lg font-semibold">{c.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {c.body}
+                </p>
               </div>
             </StaggerItem>
           ))}

@@ -50,15 +50,6 @@ export function NormalCurveBackdrop() {
           </linearGradient>
         </defs>
 
-        <path
-          d={d}
-          stroke="#2C5FE0"
-          strokeOpacity={0.18}
-          strokeWidth={2}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
         <motion.path
           d={d}
           pathLength={1}
