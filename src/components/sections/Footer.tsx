@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const cols = [
   {
     title: "Product",
@@ -19,12 +21,13 @@ export function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet to-cyan text-sm font-black text-bg">
-                A
-              </span>
-              <span className="text-lg font-semibold tracking-tight">2Skill</span>
-            </div>
+            <Image
+              src="/logo-dark.png"
+              alt="2Skill"
+              width={845}
+              height={201}
+              className="h-7 w-auto"
+            />
             <p className="mt-4 max-w-xs text-sm text-muted">
               Measure how well your team uses AI on real work — then prove it
               improved.

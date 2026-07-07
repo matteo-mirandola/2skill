@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type NavLink = { label: string; href: string };
 
@@ -34,14 +35,15 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <a href="#top" className="group flex items-center gap-2.5">
-          <span className="relative flex h-8 w-8 items-center justify-center">
-            <span className="absolute inset-0 rounded-lg bg-gradient-to-br from-violet to-cyan opacity-90 blur-[6px] transition group-hover:opacity-100" />
-            <span className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet to-cyan text-sm font-black text-bg">
-              A
-            </span>
-          </span>
-          <span className="text-lg font-semibold tracking-tight">2Skill</span>
+        <a href="#top" className="flex items-center">
+          <Image
+            src="/logo-dark.png"
+            alt="2Skill"
+            width={845}
+            height={201}
+            priority
+            className="h-7 w-auto sm:h-8"
+          />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

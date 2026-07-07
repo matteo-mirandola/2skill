@@ -1,10 +1,17 @@
 import { ImageResponse } from "next/og";
+import { readFileSync } from "fs";
+import { join } from "path";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt = "2Skill — Measure your team's real AI skill, then prove the uplift";
 
 export default function OpengraphImage() {
+  const logoBase64 = readFileSync(
+    join(process.cwd(), "public", "logo-dark.png")
+  ).toString("base64");
+  const logoSrc = `data:image/png;base64,${logoBase64}`;
+
   return new ImageResponse(
     (
       <div
@@ -20,25 +27,8 @@ export default function OpengraphImage() {
           color: "#f4f5fb",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <div
-            style={{
-              width: 56,
-              height: 56,
-              borderRadius: 14,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 34,
-              fontWeight: 900,
-              color: "#05060a",
-              background: "linear-gradient(135deg,#8b5cf6,#35d6ee)",
-            }}
-          >
-            A
-          </div>
-          <div style={{ fontSize: 34, fontWeight: 700 }}>2Skill</div>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logoSrc} width={210} height={50} alt="2Skill" />
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
