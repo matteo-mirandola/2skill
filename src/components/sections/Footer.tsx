@@ -24,8 +24,8 @@ export function Footer() {
             <Image
               src="/logo.png"
               alt="2Skill"
-              width={845}
-              height={201}
+              width={747}
+              height={167}
               className="h-7 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm text-muted">

@@ -7,17 +7,17 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const pillars = [
   {
     tag: "Measure",
-    text: "We assess how your employees actually use AI with role-specific tasks.",
+    text: "We test how your employees actually use AI on tasks from their real work.",
     accent: "from-violet to-fuchsia",
   },
   {
-    tag: "Train",
-    text: "We provide courses that close the fundamentals that matter for those exact tasks.",
+    tag: "Reskill",
+    text: "Each employee gets training matched to their gaps and their role.",
     accent: "from-fuchsia to-violet",
   },
   {
     tag: "Prove",
-    text: "We reevaluate them on fresh tasks, so you can see the improvement instead of assuming it.",
+    text: "We retest them, ensuring the improvement is measured, not assumed.",
     accent: "from-violet to-violet",
   },
 ];

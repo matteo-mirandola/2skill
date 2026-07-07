@@ -30,32 +30,15 @@ export function BookPilot() {
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                Run a two-week pilot
-                <br />
-                <span className="text-gradient">and see the delta.</span>
+                Future-prove your employees 
+                <span className="text-gradient"> now.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-md text-lg text-muted">
-                Pick one process and one small cohort. We handle the test, the
-                course, and the report. You get a number you can act on.
+              We will test how well your employee actually use AI and reskill them with specific 
+              training built for their sector and role.
               </p>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <ul className="mt-8 space-y-3 text-sm">
-                {[
-                  "One process, one cohort, ~2 weeks",
-                  "Per-employee scores + team summary",
-                  "Employees train free — the company pays",
-                ].map((t) => (
-                  <li key={t} className="flex items-center gap-3">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-violet to-fuchsia text-[11px] font-bold text-bg">
-                      ✓
-                    </span>
-                    <span className="text-muted">{t}</span>
-                  </li>
-                ))}
-              </ul>
             </Reveal>
           </div>
 
@@ -95,13 +78,21 @@ export function BookPilot() {
                     <div className="grid gap-4 sm:grid-cols-2">
                       <Field label="Full name" name="name" placeholder="Jane Doe" />
                       <Field
-                        label="Work email"
+                        label="Email"
                         name="email"
                         type="email"
                         placeholder="jane@company.com"
                       />
                     </div>
-                    <Field label="Company" name="company" placeholder="Acme Inc." />
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <Field label="Company" name="company" placeholder="Acme Inc." />
+                      <Field
+                        label="Phone number"
+                        name="phone"
+                        type="tel"
+                        placeholder="+1 555 000 0000"
+                      />
+                    </div>
 
                     <div>
                       <label className="mb-1.5 block text-sm font-medium text-muted">
@@ -127,13 +118,12 @@ export function BookPilot() {
 
                     <div>
                       <label className="mb-1.5 block text-sm font-medium text-muted">
-                        What would you want to measure?{" "}
+                        Additional info{" "}
                         <span className="text-muted/60">(optional)</span>
                       </label>
                       <textarea
                         name="message"
                         rows={3}
-                        placeholder="e.g. how our support team handles tickets with AI"
                         className="w-full resize-none rounded-lg border border-line bg-bg/50 px-4 py-3 text-sm outline-none transition placeholder:text-muted/50 focus:border-violet focus:ring-2 focus:ring-violet/30"
                       />
                     </div>
@@ -143,13 +133,10 @@ export function BookPilot() {
                       className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(44,95,224,0.35)] transition duration-200 ease-out hover:shadow-[0_14px_36px_-8px_rgba(92,138,238,0.45)] active:scale-[0.97]"
                     >
                       <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-                      Book my pilot
-                      <span className="transition-transform group-hover:translate-x-0.5">
-                        →
-                      </span>
+                      Send us a message
                     </button>
                     <p className="text-center text-xs text-muted">
-                      No credit card. We&apos;ll reply within two business days.
+                      We&apos;ll be back to you soon. Your time is valuable to us.
                     </p>
                   </motion.form>
                 )}

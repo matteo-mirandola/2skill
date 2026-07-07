@@ -28,7 +28,7 @@ export default function OpengraphImage() {
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoSrc} width={210} height={50} alt="2Skill" />
+        <img src={logoSrc} width={210} height={47} alt="2Skill" />
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div

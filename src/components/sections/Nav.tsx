@@ -7,7 +7,7 @@ import Image from "next/image";
 type NavLink = { label: string; href: string };
 
 const defaultLinks: NavLink[] = [
-  { label: "How it works", href: "#how" },
+  { label: "Our approach", href: "#how" },
   { label: "The proof", href: "#proof" },
   { label: "Platform", href: "#platform" },
   { label: "FAQ", href: "#faq" },
@@ -39,8 +39,8 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
           <Image
             src="/logo.png"
             alt="2Skill"
-            width={845}
-            height={201}
+            width={747}
+            height={167}
             priority
             className="h-7 w-auto sm:h-8"
           />
@@ -62,10 +62,8 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
           href="#book"
           className="group relative inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-bg transition duration-200 ease-out hover:bg-violet active:scale-[0.97]"
         >
-          Book a pilot
-          <span className="transition-transform group-hover:translate-x-0.5">
-            →
-          </span>
+          Send us a message
+
         </a>
       </nav>
     </motion.header>

@@ -10,18 +10,6 @@ const faqs = [
     a: "A course on its own is a commodity. What we build is the assessment around it — a way to understand how capable your team actually is before and after training. The course helps them improve; the assessment is what makes that improvement visible and trustworthy.",
   },
   {
-    q: "How do you make sure people genuinely improved?",
-    a: "We re-assess on fresh tasks the course never covered. Because the work is new, what you see reflects transferable, on-the-job capability rather than memory of our material.",
-  },
-  {
-    q: "Who pays, and who takes part?",
-    a: "The company pays and offers 2Skill as training for its people. Employees take the assessment and the course for free.",
-  },
-  {
-    q: "What does a pilot involve?",
-    a: "We focus on one process and one small group: an initial assessment, a short focused course, then a re-assessment. You come away with a clear picture of your team's AI capability and how it changed.",
-  },
-  {
     q: "Is our data safe?",
     a: "Yes. We assess capability using representative task scenarios — employees don't need to paste sensitive company data into any tool to take part. A dedicated safety dimension is on our roadmap.",
   },
@@ -56,11 +44,7 @@ export function FAQLite() {
             FAQ
           </p>
         </Reveal>
-        <Reveal delay={0.05}>
-          <h2 className="text-center text-3xl font-bold tracking-tight sm:text-5xl">
-            Questions, answered
-          </h2>
-        </Reveal>
+
 
         <div className="mt-12 space-y-3">
           {faqs.map((f, i) => {

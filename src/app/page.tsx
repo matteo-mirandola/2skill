@@ -12,7 +12,7 @@ import { BookPilot } from "@/components/sections/BookPilot";
 import { Footer } from "@/components/sections/Footer";
 
 const navLinks = [
-  { label: "How it works", href: "#how" },
+  { label: "Our approach", href: "#how" },
   { label: "Why it works", href: "#approach" },
   { label: "Platform", href: "#platform" },
   { label: "FAQ", href: "#faq" },

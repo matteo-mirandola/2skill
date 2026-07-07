@@ -2,16 +2,16 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const cards = [
   {
-    title: "Adoption is everywhere",
-    body: "Your people are already using AI on their own, but with different tools, different habits and no shared standard.",
+    title: "AI adoption is fragmented",
+    body: "People are already using AI on their own, but with different tools, different habits and no shared standard.",
   },
   {
     title: "Skill is invisible",
-    body: "One person saves real time; the next gets confident-sounding nonsense. From the outside, they look the same.",
+    body: "It's not being tested. People just assume they're using AI well, without reaching the full potential.",
   },
   {
-    title: "Nobody can measure it",
-    body: "There's no way to see who's actually capable, so training is a guess and results are anyone's opinion.",
+    title: "Measurement is ambiguous",
+    body: "You can see that people use AI, but not how well. So training is a guess and becomes generic.",
   },
 ];
 
@@ -21,19 +21,18 @@ export function ProblemLite() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
-            The gap
+            The problem
           </p>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
-            Your team is already using AI.
-            <span className="text-muted"> Nobody knows how well.</span>
+            Does your team already use AI?
+            <span className="text-muted"> Do you know how well?</span>
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-5 max-w-2xl text-lg text-muted">
-            The tools are everywhere. The skill is invisible. And you can&apos;t
-            improve — or trust — something you have no way to see.
+            It's difficult to know which AI skills your company needs and if your employees have them.
           </p>
         </Reveal>
 
