@@ -52,7 +52,7 @@ export function FAQLite() {
       />
       <div className="mx-auto max-w-3xl">
         <Reveal>
-          <p className="mb-3 text-center text-sm font-semibold uppercase tracking-widest text-violet-300">
+          <p className="mb-3 text-center text-sm font-semibold uppercase tracking-widest text-violet">
             FAQ
           </p>
         </Reveal>
@@ -77,7 +77,7 @@ export function FAQLite() {
                     <motion.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.25 }}
-                      className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-line text-lg text-violet-300"
+                      className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-line text-lg text-violet"
                     >
                       +
                     </motion.span>

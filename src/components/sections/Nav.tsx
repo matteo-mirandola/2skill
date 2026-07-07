@@ -37,7 +37,7 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" className="flex items-center">
           <Image
-            src="/logo-dark.png"
+            src="/logo.png"
             alt="2Skill"
             width={845}
             height={201}
@@ -60,7 +60,7 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
 
         <a
           href="#book"
-          className="group relative inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-bg transition duration-200 ease-out hover:bg-white active:scale-[0.97]"
+          className="group relative inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-bg transition duration-200 ease-out hover:bg-violet active:scale-[0.97]"
         >
           Book a pilot
           <span className="transition-transform group-hover:translate-x-0.5">

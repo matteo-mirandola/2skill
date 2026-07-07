@@ -16,7 +16,7 @@ export function Marquee() {
   return (
     <section className="relative border-y border-line/60 bg-bg-soft/60 py-8">
       <p className="mb-6 text-center text-xs uppercase tracking-[0.25em] text-muted">
-        Scored on the real work your team already does
+        Targeted on the real work your team already does
       </p>
       <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
         <div className="flex w-max animate-marquee gap-4">

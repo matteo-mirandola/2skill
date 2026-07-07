@@ -25,7 +25,7 @@ export function OutcomesLite() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <Reveal>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet-300">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
                 Who it&apos;s for
               </p>
             </Reveal>
@@ -48,7 +48,7 @@ export function OutcomesLite() {
             {angles.map((a) => (
               <StaggerItem key={a.kicker}>
                 <div className="card-glow flex gap-5 rounded-2xl border border-line bg-bg/40 p-6">
-                  <span className="mt-1 rounded-lg bg-gradient-to-br from-violet to-cyan px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-bg">
+                  <span className="mt-1 rounded-lg bg-gradient-to-br from-violet to-fuchsia px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-bg">
                     {a.kicker}
                   </span>
                   <div>

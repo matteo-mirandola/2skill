@@ -3,7 +3,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 const cards = [
   {
     title: "Adoption is everywhere",
-    body: "Your people are already using AI on their own — different tools, different habits, no shared standard.",
+    body: "Your people are already using AI on their own, but with different tools, different habits and no shared standard.",
   },
   {
     title: "Skill is invisible",
@@ -20,7 +20,7 @@ export function ProblemLite() {
     <section className="relative px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet-300">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
             The gap
           </p>
         </Reveal>

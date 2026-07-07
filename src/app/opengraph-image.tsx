@@ -8,7 +8,7 @@ export const alt = "2Skill — Measure your team's real AI skill, then prove the
 
 export default function OpengraphImage() {
   const logoBase64 = readFileSync(
-    join(process.cwd(), "public", "logo-dark.png")
+    join(process.cwd(), "public", "logo.png")
   ).toString("base64");
   const logoSrc = `data:image/png;base64,${logoBase64}`;
 
@@ -21,10 +21,10 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#05060a",
+          background: "#FBFCFE",
           padding: 72,
           fontFamily: "sans-serif",
-          color: "#f4f5fb",
+          color: "#0A1E3F",
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -48,7 +48,7 @@ export default function OpengraphImage() {
               fontWeight: 800,
               lineHeight: 1.05,
               letterSpacing: -2,
-              background: "linear-gradient(100deg,#a78bfa,#e94bd0,#35d6ee)",
+              background: "linear-gradient(100deg,#2C5FE0,#1B3E9C,#0F2A5E)",
               backgroundClip: "text",
               color: "transparent",
             }}
@@ -63,11 +63,11 @@ export default function OpengraphImage() {
             alignItems: "center",
             gap: 20,
             fontSize: 28,
-            color: "#9aa3b8",
+            color: "#5B6B85",
           }}
         >
           <div style={{ display: "flex", gap: 8 }}>
-            <span style={{ color: "#a3e635", fontWeight: 700 }}>Measure</span>
+            <span style={{ color: "#2C5FE0", fontWeight: 700 }}>Measure</span>
             <span>→ Train → Prove</span>
           </div>
           <div>· AI capability, made visible</div>

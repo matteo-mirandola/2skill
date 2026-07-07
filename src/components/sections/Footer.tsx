@@ -22,7 +22,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Image
-              src="/logo-dark.png"
+              src="/logo.png"
               alt="2Skill"
               width={845}
               height={201}

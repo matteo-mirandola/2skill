@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #05060a;
-  --color-bg-soft: #0a0c14;
-  --color-surface: #0e111b;
-  --color-line: #1b2030;
-  --color-ink: #f4f5fb;
-  --color-muted: #9aa3b8;
-  --color-violet: #8b5cf6;
-  --color-fuchsia: #e94bd0;
-  --color-cyan: #35d6ee;
-  --color-lime: #a3e635;
+  --color-bg: #FBFCFE;
+  --color-bg-soft: #F1F5FC;
+  --color-surface: #FFFFFF;
+  --color-line: #E3E9F5;
+  --color-ink: #0A1E3F;
+  --color-muted: #5B6B85;
+  --color-violet: #2C5FE0;
+  --color-fuchsia: #0F2A5E;
+  --color-cyan: #5C8AEE;
+  --color-lime: #0F2A5E;
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -49,7 +49,7 @@
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -65,7 +65,7 @@ body {
 }
 
 .text-gradient {
-  background-image: linear-gradient(100deg, #a78bfa, #e94bd0 45%, #35d6ee);
+  background-image: linear-gradient(100deg, #2C5FE0, #1B3E9C 45%, #0F2A5E);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -75,13 +75,13 @@ body {
 
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(10,30,63,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10,30,63,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 .glow-ring {
-  filter: drop-shadow(0 0 22px rgba(139, 92, 246, 0.55));
+  filter: drop-shadow(0 0 22px rgba(44, 95, 224, 0.35));
 }
 
 .card-glow {
@@ -92,22 +92,22 @@ body {
 @media (hover: hover) and (pointer: fine) {
   .card-glow:hover {
     transform: translateY(-6px);
-    border-color: rgba(139, 92, 246, 0.5);
-    box-shadow: 0 20px 60px -20px rgba(139, 92, 246, 0.35);
+    border-color: rgba(44, 95, 224, 0.45);
+    box-shadow: 0 20px 60px -20px rgba(44, 95, 224, 0.2);
   }
 }
 
 ::selection {
-  background: rgba(233, 75, 208, 0.35);
-  color: #fff;
+  background: rgba(44, 95, 224, 0.2);
+  color: #0A1E3F;
 }
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: #05060a; }
+::-webkit-scrollbar-track { background: #F1F5FC; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#8b5cf6, #35d6ee);
+  background: linear-gradient(#2C5FE0, #5C8AEE);
   border-radius: 99px;
-  border: 2px solid #05060a;
+  border: 2px solid #FBFCFE;
 }
 
 @media (prefers-reduced-motion: reduce) {

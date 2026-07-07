@@ -18,13 +18,13 @@ export function BookPilot() {
   return (
     <section id="book" className="relative overflow-hidden px-4 py-28 sm:px-6">
       <div className="pointer-events-none absolute inset-0 bg-grid [mask-image:radial-gradient(ellipse_50%_60%_at_50%_50%,black,transparent)]" />
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[620px] -translate-x-1/2 rounded-full bg-violet/20 blur-[130px]" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[620px] -translate-x-1/2 rounded-full bg-violet/25 blur-[130px]" />
 
       <div className="relative mx-auto max-w-5xl">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <Reveal>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet-300">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
                 Get started
               </p>
             </Reveal>
@@ -49,7 +49,7 @@ export function BookPilot() {
                   "Employees train free — the company pays",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-3">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-violet to-cyan text-[11px] font-bold text-bg">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-violet to-fuchsia text-[11px] font-bold text-bg">
                       ✓
                     </span>
                     <span className="text-muted">{t}</span>
@@ -73,7 +73,7 @@ export function BookPilot() {
                       initial={{ scale: 0.9, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ type: "spring", duration: 0.5, bounce: 0.35, delay: 0.1 }}
-                      className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-violet to-cyan text-2xl text-bg"
+                      className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-violet to-fuchsia text-2xl text-bg"
                     >
                       ✓
                     </motion.div>
@@ -140,7 +140,7 @@ export function BookPilot() {
 
                     <button
                       type="submit"
-                      className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_40px_-10px_rgba(139,92,246,0.7)] transition duration-200 ease-out hover:shadow-[0_16px_50px_-8px_rgba(233,75,208,0.7)] active:scale-[0.97]"
+                      className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(44,95,224,0.35)] transition duration-200 ease-out hover:shadow-[0_14px_36px_-8px_rgba(92,138,238,0.45)] active:scale-[0.97]"
                     >
                       <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
                       Book my pilot

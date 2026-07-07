@@ -50,7 +50,7 @@ export function Features() {
     <section id="platform" className="relative px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet-300">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
             The platform
           </p>
         </Reveal>
@@ -77,8 +77,8 @@ export function Features() {
                   >
                     <defs>
                       <linearGradient id="featGrad" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stopColor="#8b5cf6" />
-                        <stop offset="100%" stopColor="#35d6ee" />
+                        <stop offset="0%" stopColor="#2C5FE0" />
+                        <stop offset="100%" stopColor="#5C8AEE" />
                       </linearGradient>
                     </defs>
                     {f.icon}
