@@ -1,13 +1,16 @@
 import { Reveal } from "@/components/motion/Reveal";
+import { NormalCurveBackdrop } from "./NormalCurveBackdrop";
 
 export function OutcomesLite() {
   return (
     <section className="relative px-4 py-24 sm:px-6">
-      <div className="mx-auto max-w-6xl rounded-3xl border border-line bg-gradient-to-b from-surface/80 to-bg-soft/40 p-8 sm:p-12">
-        <div className="mx-auto max-w-2xl text-center">
+      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl border border-line bg-gradient-to-b from-surface/80 to-bg-soft/40 p-8 sm:p-12">
+        <NormalCurveBackdrop />
+
+        <div className="relative z-10 mx-auto max-w-2xl text-center">
           <Reveal>
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
-              Is it a good fit for me?
+              Is this a good fit for me?
             </p>
           </Reveal>
           <Reveal delay={0.05}>
