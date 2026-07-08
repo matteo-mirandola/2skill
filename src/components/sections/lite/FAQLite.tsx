@@ -7,11 +7,11 @@ import { Reveal } from "@/components/motion/Reveal";
 const faqs = [
   {
     q: "How is this different from a generic AI course?",
-    a: "A course on its own is a commodity. What we build is the assessment around it — a way to understand how capable your team actually is before and after training. The course helps them improve; the assessment is what makes that improvement visible and trustworthy.",
+    a: "A course on its own is a commodity. What we build is the assessment around it, a way to understand how capable your team actually is before and after training. The course helps them improve; the assessment is what makes that improvement visible and trustworthy.",
   },
   {
     q: "Is our data safe?",
-    a: "Yes. We assess capability using representative task scenarios — employees don't need to paste sensitive company data into any tool to take part. A dedicated safety dimension is on our roadmap.",
+    a: "Yes. We assess capability using representative task scenarios, employees don't need to paste sensitive company data into any tool to take part. A dedicated safety dimension is on our roadmap.",
   },
   {
     q: "What do we actually get at the end?",
