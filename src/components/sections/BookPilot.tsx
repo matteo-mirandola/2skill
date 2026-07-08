@@ -8,11 +8,32 @@ const teamSizes = ["1–10", "11–50", "51–200", "200+"];
 
 export function BookPilot() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Wire this to your CRM / email endpoint. For the demo we confirm locally.
-    setSubmitted(true);
+    setSending(true);
+    setError(null);
+
+    const data = Object.fromEntries(new FormData(e.currentTarget));
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => null);
+        throw new Error(body?.error || "Something went wrong. Please try again.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -128,12 +149,17 @@ export function BookPilot() {
                       />
                     </div>
 
+                    {error && (
+                      <p className="text-center text-sm text-red-500">{error}</p>
+                    )}
+
                     <button
                       type="submit"
-                      className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(44,95,224,0.35)] transition duration-200 ease-out hover:shadow-[0_14px_36px_-8px_rgba(92,138,238,0.45)] active:scale-[0.97]"
+                      disabled={sending}
+                      className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(44,95,224,0.35)] transition duration-200 ease-out hover:shadow-[0_14px_36px_-8px_rgba(92,138,238,0.45)] active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-70"
                     >
                       <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-                      Send us a message
+                      {sending ? "Sending…" : "Send us a message"}
                     </button>
                     <p className="text-center text-xs text-muted">
                       We&apos;ll be back to you soon. Your time is valuable to us.
