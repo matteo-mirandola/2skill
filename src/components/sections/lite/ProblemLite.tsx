@@ -2,16 +2,16 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const cards = [
   {
-    title: "AI adoption is fragmented",
-    body: "People are already using AI on their own, but with different tools, different habits and no shared standard.",
+    title: "Too many tools without a clear map",
+    body: "Your team already has access to dozens of AI products but many don't know which tool actually fits which task. Burning efficiency and effort by using the wrong tools for the job.",
   },
   {
-    title: "Skill is invisible",
-    body: "It's not being tested. People just assume they're using AI well, without reaching the full potential.",
+    title: "You can't invest in skills you can't see",
+    body: "Deciding which AI capabilities are worth training on is pure guesswork for many companies. Without knowing where your team really stands, budget goes to generic AI tools that underperform.",
   },
   {
-    title: "Measurement is ambiguous",
-    body: "You can see that people use AI, but not how well. So training is a guess and becomes generic.",
+    title: "Testing turns guesswork into a plan",
+    body: "By testing and measuring your employees’ real skills on real tasks, you see exactly which products and which skills are worth investing in. Leveraging AI to its fullest potential.",
   },
 ];
 
@@ -32,7 +32,7 @@ export function ProblemLite() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-5 max-w-2xl text-lg text-muted">
-            It's difficult to know which AI skills your company needs and if your employees have them.
+            You can't tell which AI tools fit which tasks, or which skills are actually worth paying to build.
           </p>
         </Reveal>
 

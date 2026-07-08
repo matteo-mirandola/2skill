@@ -1,0 +1,75 @@
+<svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow Automation">
+  <defs>
+    <linearGradient id="wa-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFCFE"></stop>
+      <stop offset="1" stop-color="#EAF0FF"></stop>
+    </linearGradient>
+    <filter id="wa-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A1E3F" flood-opacity="0.12"></feDropShadow>
+    </filter>
+    <marker id="wa-arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5B6B85"></path>
+    </marker>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#wa-bg)"></rect>
+
+  <g opacity="0.6">
+    <circle cx="566" cy="76" r="88" fill="#E3E9F5">
+
+    </circle>
+    <circle cx="74" cy="340" r="64" fill="#D9E4FF">
+
+    </circle>
+  </g>
+
+  <rect x="140" y="64" width="360" height="272" rx="24" fill="#FFFFFF" stroke="#E3E9F5" stroke-width="1.5" filter="url(#wa-soft)"></rect>
+
+
+  <line x1="320" y1="186" x2="320" y2="210" stroke="#2C5FE0" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity="0.5"></line>
+  <g transform="translate(300 148)">
+    <g>
+
+      <g fill="#2C5FE0">
+        <rect x="-26" y="-6.5" width="52" height="13" rx="3"></rect>
+        <rect x="-26" y="-6.5" width="52" height="13" rx="3" transform="rotate(45)"></rect>
+        <rect x="-26" y="-6.5" width="52" height="13" rx="3" transform="rotate(90)"></rect>
+        <rect x="-26" y="-6.5" width="52" height="13" rx="3" transform="rotate(135)"></rect>
+      </g>
+      <circle r="18" fill="#2C5FE0"></circle>
+      <circle r="8" fill="#FFFFFF"></circle>
+    </g>
+  </g>
+  <g transform="translate(343 165)">
+    <g>
+
+      <g fill="#0F2A5E">
+        <rect x="-19" y="-5" width="38" height="10" rx="2.5"></rect>
+        <rect x="-19" y="-5" width="38" height="10" rx="2.5" transform="rotate(45)"></rect>
+        <rect x="-19" y="-5" width="38" height="10" rx="2.5" transform="rotate(90)"></rect>
+        <rect x="-19" y="-5" width="38" height="10" rx="2.5" transform="rotate(135)"></rect>
+      </g>
+      <circle r="13" fill="#0F2A5E"></circle>
+      <circle r="6" fill="#FFFFFF"></circle>
+    </g>
+  </g>
+
+
+  <g fill="none" stroke="#5B6B85" stroke-width="2.5">
+    <line x1="248" y1="238" x2="270" y2="238" marker-end="url(#wa-arrow)"></line>
+    <line x1="370" y1="238" x2="392" y2="238" marker-end="url(#wa-arrow)"></line>
+  </g>
+
+
+  <rect x="150" y="210" width="96" height="56" rx="14" fill="#FFFFFF" stroke="#2C5FE0" stroke-width="2"></rect>
+  <path d="M201 222 l-13 22 h9 l-4 16 l15 -24 h-9 z" fill="#2C5FE0"></path>
+
+
+  <rect x="272" y="210" width="96" height="56" rx="14" fill="#2C5FE0"></rect>
+  <rect x="304" y="230" width="34" height="6" rx="3" fill="#FFFFFF" opacity="0.95"></rect>
+  <rect x="304" y="242" width="22" height="6" rx="3" fill="#FFFFFF" opacity="0.6"></rect>
+
+
+  <rect x="394" y="210" width="96" height="56" rx="14" fill="#0F2A5E"></rect>
+  <path d="M431 238 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

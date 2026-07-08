@@ -1,0 +1,52 @@
+<svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Data Analysis and Visualization">
+  <defs>
+    <linearGradient id="da-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFCFE"></stop>
+      <stop offset="1" stop-color="#EAF0FF"></stop>
+    </linearGradient>
+    <filter id="da-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A1E3F" flood-opacity="0.12"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#da-bg)"></rect>
+
+  <g opacity="0.6">
+    <circle cx="70" cy="70" r="80" fill="#E3E9F5">
+
+    </circle>
+    <circle cx="572" cy="342" r="70" fill="#D9E4FF">
+
+    </circle>
+  </g>
+
+
+  <rect x="140" y="64" width="360" height="272" rx="24" fill="#FFFFFF" stroke="#E3E9F5" stroke-width="1.5" filter="url(#da-soft)"></rect>
+
+
+  <rect x="168" y="92" width="90" height="10" rx="5" fill="#0F2A5E" opacity="0.85"></rect>
+  <circle cx="466" cy="97" r="5" fill="#E3E9F5"></circle>
+  <circle cx="450" cy="97" r="5" fill="#E3E9F5"></circle>
+
+
+  <path d="M176 150 L216 128 L258 140 L300 116 L342 132" fill="none" stroke="#2C5FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <g fill="#2C5FE0">
+    <circle cx="176" cy="150" r="3.6"></circle><circle cx="216" cy="128" r="3.6"></circle><circle cx="258" cy="140" r="3.6"></circle>
+    <circle cx="300" cy="116" r="3.6"></circle><circle cx="342" cy="132" r="3.6"></circle>
+  </g>
+
+
+  <line x1="170" y1="290" x2="352" y2="290" stroke="#E3E9F5" stroke-width="2"></line>
+  <rect x="178" y="238" width="26" height="52" rx="5" fill="#E3E9F5"></rect>
+  <rect x="220" y="202" width="26" height="88" rx="5" fill="#2C5FE0"></rect>
+  <rect x="262" y="170" width="26" height="120" rx="5" fill="#0F2A5E"></rect>
+  <rect x="304" y="218" width="26" height="72" rx="5" fill="#2C5FE0" opacity="0.6"></rect>
+
+
+  <g transform="rotate(-90 432 196)">
+    <circle cx="432" cy="196" r="44" fill="none" stroke="#E3E9F5" stroke-width="22"></circle>
+    <circle cx="432" cy="196" r="44" fill="none" stroke="#2C5FE0" stroke-width="22" stroke-dasharray="152 124.5" stroke-linecap="butt"></circle>
+    <circle cx="432" cy="196" r="44" fill="none" stroke="#0F2A5E" stroke-width="22" stroke-dasharray="70 206.5" stroke-dashoffset="-152" stroke-linecap="butt"></circle>
+  </g>
+  <circle cx="432" cy="196" r="6" fill="#0F2A5E" opacity="0.15"></circle>
+</svg>
