@@ -32,7 +32,7 @@ export function Features() {
             The AI skills we test and teach.
           </h2>
           <p className="mt-5 max-w-2xl text-lg text-muted">
-            Five focused courses covering the skills that matter most for getting real value out of AI.
+            Three focused courses covering the skills that matter most for getting real value out of AI.
           </p>
         </Reveal>
 
