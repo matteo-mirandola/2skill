@@ -7,7 +7,6 @@ import { HowItWorksLite } from "@/components/sections/lite/HowItWorksLite";
 import { ProofLite } from "@/components/sections/lite/ProofLite";
 import { Features } from "@/components/sections/Features";
 import { OutcomesLite } from "@/components/sections/lite/OutcomesLite";
-import { FAQLite } from "@/components/sections/lite/FAQLite";
 import { BookPilot } from "@/components/sections/BookPilot";
 import { Footer } from "@/components/sections/Footer";
 
@@ -15,7 +14,6 @@ const navLinks = [
   { label: "Our approach", href: "#how" },
   { label: "Why it works", href: "#approach" },
   { label: "Platform", href: "#platform" },
-  { label: "FAQ", href: "#faq" },
 ];
 
 export const metadata: Metadata = {
@@ -37,7 +35,6 @@ export default function Home() {
         <ProofLite />
         <Features />
         <OutcomesLite />
-        <FAQLite />
         <BookPilot />
       </main>
       <Footer />
