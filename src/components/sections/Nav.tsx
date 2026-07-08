@@ -10,7 +10,6 @@ const defaultLinks: NavLink[] = [
   { label: "Our approach", href: "#how" },
   { label: "The proof", href: "#proof" },
   { label: "Platform", href: "#platform" },
-  { label: "FAQ", href: "#faq" },
 ];
 
 export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
