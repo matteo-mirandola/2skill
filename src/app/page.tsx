@@ -19,7 +19,7 @@ const navLinks = [
 ];
 
 export const metadata: Metadata = {
-  title: "2Skill — Understand and grow your team's real AI skill",
+  title: "2Skill",
   description:
     "2Skill helps companies see how well their employees use AI on real work, trains them on the fundamentals, and shows the improvement. Book a pilot.",
   alternates: { canonical: "https://2Skill.ai" },
