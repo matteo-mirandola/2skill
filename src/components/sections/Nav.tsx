@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { AnimatedLogo } from "./AnimatedLogo";
 
 type NavLink = { label: string; href: string };
 
@@ -35,16 +35,7 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <a href="#top" className="flex items-center">
-          <Image
-            src="/logo.png"
-            alt="2Skill"
-            width={747}
-            height={167}
-            priority
-            className="h-7 w-auto sm:h-8"
-          />
-        </a>
+        <AnimatedLogo />
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (

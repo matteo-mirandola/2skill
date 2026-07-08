@@ -2,16 +2,16 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const courses = [
   {
-    title: "Prompt Engineering",
-    body: "Prompt engineering is the art of crafting precise instructions for AI models to produce accurate and high-quality outputs.",
+    title: "Choose and set up AI tools that keep data in-house",
+    body: "How to tell whether a tool trains on your data, where it's hosted, turning off training/history, and picking the business tier that comes with the right contractual terms.",
   },
   {
-    title: "Data Analysis & Visualization",
-    body: "An AI data analysis and visualization skill is a set of programmable AI capabilities that automates the process of extracting, interpreting, and graphically representing data",
+    title: "Ship the recurring report without dreading it",
+    body: "Pull a dataset into a narrative, draft the exec summary, turn a pivot table into three sentences a director will actually read. This is where the felt pain is loudest.",
   },
   {
-    title: "Workflow Automation",
-    body: "AI workflow automation is the use of Artificial Intelligence to build repeatable systems that can reason, adapt, and make decisions mid-execution",
+    title: "Record invoices and expenses in half the time.",
+    body: "Data extraction from PDF/invoice photos, categorization, and VAT validation integrated into the management software they already use",
   },
 ];
 
