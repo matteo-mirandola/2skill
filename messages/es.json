@@ -16,13 +16,13 @@
     "line1Highlight": "IA",
     "line1Suffix": " tiene el potencial.",
     "line2": "Tu equipo lo desbloquea.",
-    "subtitle": "En <brand>twoskill</brand> evaluamos lo bien que tu equipo usa realmente la IA y después lo formamos con <b>una formación específica</b> adaptada a su sector y su puesto.",
+    "subtitle": "En <brand>twoskill</brand> evaluamos lo bien que tu equipo usa realmente la IA y después lo formamos con <b>una formación específica</b> adaptada a su sector y su rol.",
     "ctaPrimary": "Envíanos un mensaje",
     "ctaSecondary": "Descubre cómo funciona",
     "cardTitle": "Cómo funciona",
     "pillars": [
       { "tag": "Medimos", "text": "Evaluamos cómo usan tus empleados la IA en tareas de su trabajo real." },
-      { "tag": "Formamos", "text": "Cada empleado recibe una formación adaptada a sus carencias y a su puesto." },
+      { "tag": "Formamos", "text": "Cada empleado recibe una formación adaptada a sus carencias y a su rol." },
       { "tag": "Demostramos", "text": "Los volvemos a evaluar, para que la mejora se mida y que no se asuma." }
     ]
   },
@@ -36,7 +36,7 @@
       "Tickets de soporte",
       "Informes y resúmenes",
       "Limpieza de datos",
-      "Descripciones de puestos",
+      "Descripciones de rol",
       "Textos de marketing",
       "Informes de investigación"
     ]
@@ -70,7 +70,7 @@
         "n": "01",
         "tag": "Evaluar",
         "title": "Mide el punto de partida real",
-        "body": "Los empleados resuelven tareas extraídas de su puesto real. Evaluamos si son capaces de obtener resultados útiles de la IA en su trabajo."
+        "body": "Los empleados resuelven tareas extraídas de su rol real. Evaluamos si son capaces de obtener resultados útiles de la IA en su trabajo."
       },
       {
         "n": "02",
@@ -90,7 +90,7 @@
     "eyebrow": "Por qué funciona",
     "titleLine1": "Una mejora que se ve.",
     "titleLine2": "Un resultado que se mide.",
-    "subtitle": "La mayoría de los cursos de IA son genéricos. Nosotros construimos la formación en torno al puesto y las tareas reales de tus empleados, para que aprendan exactamente lo que su trabajo requiere. Evaluamos previa y posteriormente para verificar la mejora."
+    "subtitle": "La mayoría de los cursos de IA son genéricos. Nosotros construimos la formación en torno al rol y las tareas reales de tus empleados, para que aprendan exactamente lo que su trabajo requiere. Evaluamos previa y posteriormente para verificar la mejora."
   },
   "platform": {
     "eyebrow": "La plataforma",
@@ -121,7 +121,7 @@
     "eyebrow": "Empieza ahora",
     "titlePrefix": "Prepara a tus empleados para el futuro",
     "titleHighlight": " ahora mismo.",
-    "subtitle": "Evaluaremos lo bien que tus empleados usan realmente la IA y los formaremos específicamente para su sector y su puesto.",
+    "subtitle": "Evaluaremos lo bien que tus empleados usan realmente la IA y los formaremos específicamente para su sector y su rol.",
     "successTitle": "Ya estás en la lista",
     "successBody": "Gracias. Nos pondremos en contacto para definir el grupo piloto y el proceso. Revisa tu bandeja de entrada.",
     "fields": {
