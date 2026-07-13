@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "ourApproach": "Our approach",
+    "whyItWorks": "Why it works",
+    "platform": "Platform",
+    "sendMessage": "Send us a message"
+  },
+  "meta": {
+    "title": "twoskill",
+    "description": "2Skill helps companies see how well their employees use AI on real work, trains them on the fundamentals, and shows the improvement. Book a pilot.",
+    "ogDescription": "See how well your team uses AI on real work, train them on the fundamentals, and watch the improvement.",
+    "twitterDescription": "The assessment that makes your team's AI capability visible — and shows it improve."
+  },
+  "hero": {
+    "line1Prefix": "",
+    "line1Highlight": "AI",
+    "line1Suffix": " has the potential.",
+    "line2": "Your people unlock it.",
+    "subtitle": "We at <brand>twoskill</brand> test how well your employees actually use AI, then reskill them with <b>specific training</b> built for their sector and role.",
+    "ctaPrimary": "Send us a message",
+    "ctaSecondary": "See how it works",
+    "cardTitle": "How it works",
+    "pillars": [
+      { "tag": "Measure", "text": "We test how your employees actually use AI on tasks from their real work." },
+      { "tag": "Reskill", "text": "Each employee gets training matched to their gaps and their role." },
+      { "tag": "Prove", "text": "We retest them, ensuring the improvement is measured, not assumed." }
+    ]
+  },
+  "marquee": {
+    "eyebrow": "Targeted on the real work your team already does",
+    "tasks": [
+      "Customer emails",
+      "Spreadsheet analysis",
+      "Sales proposals",
+      "Meeting notes",
+      "Support tickets",
+      "Reports & summaries",
+      "Data cleanup",
+      "Job descriptions",
+      "Marketing copy",
+      "Research briefs"
+    ]
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "titlePrefix": "Does your team already use AI?",
+    "titleSuffix": " Do you know how well?",
+    "subtitle": "You can't tell which AI tools fit which tasks, or which skills are actually worth paying to build.",
+    "cards": [
+      {
+        "title": "Too many tools without a clear map",
+        "body": "Your team already has access to dozens of AI products but many don't know which tool actually fits which task. Burning efficiency and effort by using the wrong tools for the job."
+      },
+      {
+        "title": "You can't invest in skills you can't see",
+        "body": "Deciding which AI capabilities are worth training on is pure guesswork for many companies. Without knowing where your team really stands, budget goes to generic AI tools that underperform."
+      },
+      {
+        "title": "Testing turns guesswork into a plan",
+        "body": "By testing and measuring your employees' real skills on real tasks, you see exactly which products and which skills are worth investing in. Leveraging AI to its fullest potential."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Our approach",
+    "title": "Test → Reskill → Verify",
+    "subtitle": "One simple loop. Test what's missing, reskill the employee, verify the improvement.",
+    "steps": [
+      {
+        "n": "01",
+        "tag": "Test",
+        "title": "Baseline the real skill",
+        "body": "Employees work through tasks drawn from their actual role. We assess whether they can get useful output from AI on their work."
+      },
+      {
+        "n": "02",
+        "tag": "Reskill",
+        "title": "Teach new capabilities",
+        "body": "A specific course teaches the techniques that are effective for prompting, verifying output, critical thinking, workflow and much more."
+      },
+      {
+        "n": "03",
+        "tag": "Verify",
+        "title": "See the improvement",
+        "body": "The second assessment uses new tasks, so the result measures transferable skill, not memory of the course content."
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "Why it works",
+    "titleLine1": "Improvement you can see.",
+    "titleLine2": "Result you can measure.",
+    "subtitle": "Most AI courses are generic. We build training around your employees's actual roles and tasks, so people learn exactly what their job requires. Then we test before and after, in order to verify the improvement."
+  },
+  "platform": {
+    "eyebrow": "The platform",
+    "title": "The AI skills we test and teach.",
+    "subtitle": "Three focused courses covering the skills that matter most for getting real value out of AI.",
+    "courses": [
+      {
+        "title": "Choose and set up AI tools that keep data in-house",
+        "body": "How to tell whether a tool trains on your data, where it's hosted, turning off training/history, and picking the business tier that comes with the right contractual terms."
+      },
+      {
+        "title": "Ship the recurring report without dreading it",
+        "body": "Pull a dataset into a narrative, draft the exec summary, turn a pivot table into three sentences a director will actually read. This is where the felt pain is loudest."
+      },
+      {
+        "title": "Record invoices and expenses in half the time.",
+        "body": "Data extraction from PDF/invoice photos, categorization, and VAT validation integrated into the management software they already use"
+      }
+    ]
+  },
+  "outcomes": {
+    "eyebrow": "Is this a good fit for me?",
+    "titlePrefix": "We are looking to work with companies that want to be ahead of the AI curve and want to",
+    "titleHighlight": " maximize their team's capabilities",
+    "titleSuffix": "."
+  },
+  "bookPilot": {
+    "eyebrow": "Get started",
+    "titlePrefix": "Future-prove your employees",
+    "titleHighlight": " now.",
+    "subtitle": "We will test how well your employee actually use AI and reskill them with specific training built for their sector and role.",
+    "successTitle": "You're on the list",
+    "successBody": "Thanks — we'll be in touch to scope your pilot cohort and process. Check your inbox.",
+    "fields": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Jane Doe",
+      "email": "Email",
+      "emailPlaceholder": "jane@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Acme Inc.",
+      "phone": "Phone number",
+      "phonePlaceholder": "+1 555 000 0000",
+      "teamSize": "Team size",
+      "additionalInfo": "Additional info",
+      "optional": "(optional)"
+    },
+    "sending": "Sending…",
+    "submit": "Send us a message",
+    "disclaimer": "We'll be back to you soon. Your time is valuable to us.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "copyright": "© {year} twoskill. All rights reserved.",
+    "tagline": "Built for teams that measure what matters."
+  }
+}

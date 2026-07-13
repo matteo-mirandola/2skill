@@ -2,11 +2,13 @@
 
 import { useState, type FormEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/motion/Reveal";
 
 const teamSizes = ["1–10", "11–50", "51–200", "200+"];
 
 export function BookPilot() {
+  const t = useTranslations("bookPilot");
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -26,11 +28,11 @@ export function BookPilot() {
       });
       if (!res.ok) {
         const body = await res.json().catch(() => null);
-        throw new Error(body?.error || "Something went wrong. Please try again.");
+        throw new Error(body?.error || t("genericError"));
       }
       setSubmitted(true);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+      setError(err instanceof Error ? err.message : t("genericError"));
     } finally {
       setSending(false);
     }
@@ -46,20 +48,17 @@ export function BookPilot() {
           <div>
             <Reveal>
               <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-violet">
-                Get started
+                {t("eyebrow")}
               </p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                Future-prove your employees 
-                <span className="text-gradient"> now.</span>
+                {t("titlePrefix")}
+                <span className="text-gradient">{t("titleHighlight")}</span>
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="mt-5 max-w-md text-lg text-muted">
-              We will test how well your employee actually use AI and reskill them with specific 
-              training built for their sector and role.
-              </p>
+              <p className="mt-5 max-w-md text-lg text-muted">{t("subtitle")}</p>
             </Reveal>
           </div>
 
@@ -81,10 +80,9 @@ export function BookPilot() {
                     >
                       ✓
                     </motion.div>
-                    <h3 className="text-2xl font-bold">You&apos;re on the list</h3>
+                    <h3 className="text-2xl font-bold">{t("successTitle")}</h3>
                     <p className="mt-2 max-w-xs text-sm text-muted">
-                      Thanks — we&apos;ll be in touch to scope your pilot cohort
-                      and process. Check your inbox.
+                      {t("successBody")}
                     </p>
                   </motion.div>
                 ) : (
@@ -97,27 +95,27 @@ export function BookPilot() {
                     className="space-y-4"
                   >
                     <div className="grid gap-4 sm:grid-cols-2">
-                      <Field label="Full name" name="name" placeholder="Jane Doe" />
+                      <Field label={t("fields.fullName")} name="name" placeholder={t("fields.fullNamePlaceholder")} />
                       <Field
-                        label="Email"
+                        label={t("fields.email")}
                         name="email"
                         type="email"
-                        placeholder="jane@company.com"
+                        placeholder={t("fields.emailPlaceholder")}
                       />
                     </div>
                     <div className="grid gap-4 sm:grid-cols-2">
-                      <Field label="Company" name="company" placeholder="Acme Inc." />
+                      <Field label={t("fields.company")} name="company" placeholder={t("fields.companyPlaceholder")} />
                       <Field
-                        label="Phone number"
+                        label={t("fields.phone")}
                         name="phone"
                         type="tel"
-                        placeholder="+1 555 000 0000"
+                        placeholder={t("fields.phonePlaceholder")}
                       />
                     </div>
 
                     <div>
                       <label className="mb-1.5 block text-sm font-medium text-muted">
-                        Team size
+                        {t("fields.teamSize")}
                       </label>
                       <div className="grid grid-cols-4 gap-2">
                         {teamSizes.map((s, i) => (
@@ -139,8 +137,8 @@ export function BookPilot() {
 
                     <div>
                       <label className="mb-1.5 block text-sm font-medium text-muted">
-                        Additional info{" "}
-                        <span className="text-muted/60">(optional)</span>
+                        {t("fields.additionalInfo")}{" "}
+                        <span className="text-muted/60">{t("fields.optional")}</span>
                       </label>
                       <textarea
                         name="message"
@@ -159,10 +157,10 @@ export function BookPilot() {
                       className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(44,95,224,0.35)] transition duration-200 ease-out hover:shadow-[0_14px_36px_-8px_rgba(92,138,238,0.45)] active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-70"
                     >
                       <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-                      {sending ? "Sending…" : "Send us a message"}
+                      {sending ? t("sending") : t("submit")}
                     </button>
                     <p className="text-center text-xs text-muted">
-                      We&apos;ll be back to you soon. Your time is valuable to us.
+                      {t("disclaimer")}
                     </p>
                   </motion.form>
                 )}

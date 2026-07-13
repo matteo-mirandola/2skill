@@ -1,28 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const pillars = [
-  {
-    tag: "Measure",
-    text: "We test how your employees actually use AI on tasks from their real work.",
-    accent: "from-violet to-fuchsia",
-  },
-  {
-    tag: "Reskill",
-    text: "Each employee gets training matched to their gaps and their role.",
-    accent: "from-fuchsia to-violet",
-  },
-  {
-    tag: "Prove",
-    text: "We retest them, ensuring the improvement is measured, not assumed.",
-    accent: "from-violet to-violet",
-  },
-];
+const accents = ["from-violet to-fuchsia", "from-fuchsia to-violet", "from-violet to-violet"];
 
 export function HeroLite() {
+  const t = useTranslations("hero");
+  const pillars = t.raw("pillars") as { tag: string; text: string }[];
+
   return (
     <section
       id="top"
@@ -61,9 +49,11 @@ export function HeroLite() {
             transition={{ duration: 0.7, ease, delay: 0.05 }}
             className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl"
           >
-            <span className="text-gradient">AI</span> has the potential.
+            {t("line1Prefix")}
+            <span className="text-gradient">{t("line1Highlight")}</span>
+            {t("line1Suffix")}
             <br />
-            Your people unlock it.
+            {t("line2")}
           </motion.h1>
 
           <motion.p
@@ -72,15 +62,10 @@ export function HeroLite() {
             transition={{ duration: 0.7, ease, delay: 0.15 }}
             className="mt-6 max-w-xl text-lg text-muted"
           >
-            We at 
-            <span className="font-semibold text-ink"> twoskill </span>
-            test how well your employees actually use AI, 
-            then reskill them with 
-            <span className="font-semibold text-ink"> specific training
-            </span> built for their sector 
-            and role. {" "}
-            
-            
+            {t.rich("subtitle", {
+              brand: (chunks) => <span className="font-semibold text-ink"> {chunks} </span>,
+              b: (chunks) => <span className="font-semibold text-ink">{chunks}</span>,
+            })}
           </motion.p>
 
           <motion.div
@@ -94,13 +79,13 @@ export function HeroLite() {
               className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-violet to-fuchsia px-7 py-3.5 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(44,95,224,0.35)] transition duration-200 ease-out hover:shadow-[0_14px_36px_-8px_rgba(92,138,238,0.45)] active:scale-[0.97]"
             >
               <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-              Send us a message
+              {t("ctaPrimary")}
             </a>
             <a
               href="#how"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-line bg-surface/60 px-7 py-3.5 text-base font-medium text-ink backdrop-blur transition duration-200 ease-out hover:border-violet/40 hover:bg-surface active:scale-[0.97]"
             >
-              See how it works
+              {t("ctaSecondary")}
             </a>
           </motion.div>
 
@@ -115,14 +100,14 @@ export function HeroLite() {
         >
           <div className="animate-float rounded-3xl border border-line bg-surface/70 p-7 backdrop-blur-xl shadow-[0_20px_60px_-20px_rgba(10,30,63,0.15)]">
             <p className="mb-6 text-xs uppercase tracking-widest text-muted">
-              How it works
+              {t("cardTitle")}
             </p>
             <div className="space-y-5">
               {pillars.map((p, i) => (
                 <div key={p.tag} className="flex gap-4">
                   <div className="flex flex-col items-center">
                     <span
-                      className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${p.accent} text-xs font-black text-bg`}
+                      className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${accents[i]} text-xs font-black text-bg`}
                     >
                       {i + 1}
                     </span>

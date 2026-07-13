@@ -1,49 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/motion/Reveal";
 
-const steps = [
-  {
-    n: "01",
-    tag: "Test",
-    title: "Baseline the real skill",
-    body: "Employees work through tasks drawn from their actual role. We assess whether they can get useful output from AI on their work.",
-    accent: "from-violet to-fuchsia",
-  },
-  {
-    n: "02",
-    tag: "Reskill",
-    title: "Teach new capabilities",
-    body: "A specific course teaches the techniques that are effective for prompting, verifying output, critical thinking, workflow and much more.",
-    accent: "from-fuchsia to-violet",
-  },
-  {
-    n: "03",
-    tag: "Verify",
-    title: "See the improvement",
-    body: "The second assessment uses new tasks, so the result measures transferable skill, not memory of the course content.",
-    accent: "from-violet to-violet",
-  },
-];
+const accents = ["from-violet to-fuchsia", "from-fuchsia to-violet", "from-violet to-violet"];
 
 export function HowItWorksLite() {
+  const t = useTranslations("howItWorks");
+  const steps = t.raw("steps") as { n: string; tag: string; title: string; body: string }[];
+
   return (
     <section id="how" className="relative px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="mb-3 text-center text-sm font-semibold uppercase tracking-widest text-violet">
-            Our approach
+            {t("eyebrow")}
           </p>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mx-auto max-w-3xl text-center text-3xl font-bold tracking-tight sm:text-5xl">
-            Test &rarr; Reskill &rarr; Verify
+            {t("title")}
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mx-auto mt-5 max-w-3xl text-center text-lg text-muted">
-            One simple loop. Test what's missing, reskill the employee, verify the improvement.
+            {t("subtitle")}
           </p>
         </Reveal>
 
@@ -72,10 +54,10 @@ export function HowItWorksLite() {
               >
                 <div className="relative z-10 mx-auto mb-6 flex h-16 w-16 items-center justify-center">
                   <span
-                    className={`absolute inset-0 rounded-full bg-gradient-to-br ${s.accent} opacity-90 blur-[14px]`}
+                    className={`absolute inset-0 rounded-full bg-gradient-to-br ${accents[i]} opacity-90 blur-[14px]`}
                   />
                   <span
-                    className={`relative flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${s.accent} text-base font-black text-bg`}
+                    className={`relative flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${accents[i]} text-base font-black text-bg`}
                   >
                     {s.n}
                   </span>

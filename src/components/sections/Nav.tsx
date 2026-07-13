@@ -2,17 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { AnimatedLogo } from "./AnimatedLogo";
+import { LocaleSwitcher } from "./LocaleSwitcher";
 
-type NavLink = { label: string; href: string };
-
-const defaultLinks: NavLink[] = [
-  { label: "Our approach", href: "#how" },
-  { label: "The proof", href: "#proof" },
-  { label: "Platform", href: "#platform" },
-];
-
-export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
+export function Nav() {
+  const t = useTranslations("nav");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,6 +16,12 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const links = [
+    { href: "#how", label: t("ourApproach") },
+    { href: "#approach", label: t("whyItWorks") },
+    { href: "#platform", label: t("platform") },
+  ];
 
   return (
     <motion.header
@@ -48,13 +49,15 @@ export function Nav({ links = defaultLinks }: { links?: NavLink[] }) {
           ))}
         </div>
 
-        <a
-          href="#book"
-          className="group relative inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-bg transition duration-200 ease-out hover:bg-violet active:scale-[0.97]"
-        >
-          Send us a message
-
-        </a>
+        <div className="flex items-center gap-4">
+          <LocaleSwitcher />
+          <a
+            href="#book"
+            className="group relative inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-bg transition duration-200 ease-out hover:bg-violet active:scale-[0.97]"
+          >
+            {t("sendMessage")}
+          </a>
+        </div>
       </nav>
     </motion.header>
   );
