@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "ourApproach": "Nuestro enfoque",
+    "whyItWorks": "Por qué funciona",
+    "platform": "Plataforma",
+    "sendMessage": "Envíanos un mensaje"
+  },
+  "meta": {
+    "title": "twoskill",
+    "description": "2Skill ayuda a las empresas a comprobar el nivel real de uso de la IA de sus empleados en su trabajo diario, los forma en los fundamentos y demuestra la mejora conseguida. Solicita un piloto.",
+    "ogDescription": "Comprueba el nivel real de uso de la IA de tu equipo en su trabajo diario, fórmalo en los fundamentos y observa la mejora.",
+    "twitterDescription": "La evaluación que hace visible la capacidad de tu equipo con la IA... y demuestra su mejora."
+  },
+  "hero": {
+    "line1Prefix": "La ",
+    "line1Highlight": "IA",
+    "line1Suffix": " tiene el potencial.",
+    "line2": "Tu equipo lo desbloquea.",
+    "subtitle": "En <brand>twoskill</brand> evaluamos lo bien que tu equipo usa realmente la IA y después lo formamos con <b>una formación específica</b> adaptada a su sector y su puesto.",
+    "ctaPrimary": "Envíanos un mensaje",
+    "ctaSecondary": "Descubre cómo funciona",
+    "cardTitle": "Cómo funciona",
+    "pillars": [
+      { "tag": "Medimos", "text": "Evaluamos cómo usan tus empleados la IA en tareas de su trabajo real." },
+      { "tag": "Formamos", "text": "Cada empleado recibe una formación adaptada a sus carencias y a su puesto." },
+      { "tag": "Demostramos", "text": "Los volvemos a evaluar, para que la mejora se mida y que no se asuma." }
+    ]
+  },
+  "marquee": {
+    "eyebrow": "Centrado en el trabajo real que ya hace tu equipo",
+    "tasks": [
+      "Correos con clientes",
+      "Análisis de hojas de cálculo",
+      "Propuestas comerciales",
+      "Notas de reuniones",
+      "Tickets de soporte",
+      "Informes y resúmenes",
+      "Limpieza de datos",
+      "Descripciones de puestos",
+      "Textos de marketing",
+      "Informes de investigación"
+    ]
+  },
+  "problem": {
+    "eyebrow": "El problema",
+    "titlePrefix": "¿Tu equipo ya usa la IA?",
+    "titleSuffix": " ¿Sabes hasta qué punto?",
+    "subtitle": "¿Conoces qué herramientas de IA sirven para cada tarea? ¿O qué habilidades vale realmente la pena aprender a dominar?",
+    "cards": [
+      {
+        "title": "Demasiadas herramientas sin una dirección clara",
+        "body": "Tu equipo ya tiene acceso a decenas de productos de IA, pero muchos no saben qué herramienta encaja con cada tarea. Se pierde eficiencia y esfuerzo usando la herramienta equivocada para cada trabajo."
+      },
+      {
+        "title": "No puedes desarrollar habilidades que no puedes ver",
+        "body": "Decidir qué capacidades de IA merece la pena formar es una suposición para muchas empresas. Sin saber en qué punto está realmente tu equipo, el presupuesto acaba en herramientas genéricas que rinden por debajo de lo esperado."
+      },
+      {
+        "title": "Evaluar convierte la hipótesis en un plan",
+        "body": "Al evaluar y medir las habilidades reales de tus empleados en tareas reales, ves exactamente en qué productos y qué habilidades merece la pena invertir. Aprovechando la IA a su máximo potencial."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Nuestro enfoque",
+    "title": "Evaluar → Formar → Verificar",
+    "subtitle": "Un ciclo simple. Se evalúa lo que falta, se forma al empleado y se verifica la mejora.",
+    "steps": [
+      {
+        "n": "01",
+        "tag": "Evaluar",
+        "title": "Mide el punto de partida real",
+        "body": "Los empleados resuelven tareas extraídas de su puesto real. Evaluamos si son capaces de obtener resultados útiles de la IA en su trabajo."
+      },
+      {
+        "n": "02",
+        "tag": "Formar",
+        "title": "Enseña nuevas capacidades",
+        "body": "Un curso específico enseña las técnicas eficaces para escribir prompts, verificar resultados, pensamiento crítico, flujos de trabajo y mucho más."
+      },
+      {
+        "n": "03",
+        "tag": "Verificar",
+        "title": "Observa la mejora",
+        "body": "La segunda evaluación usa tareas nuevas, de modo que el resultado mide una habilidad transferible, no la memorización del contenido del curso."
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "Por qué funciona",
+    "titleLine1": "Una mejora que se ve.",
+    "titleLine2": "Un resultado que se mide.",
+    "subtitle": "La mayoría de los cursos de IA son genéricos. Nosotros construimos la formación en torno al puesto y las tareas reales de tus empleados, para que aprendan exactamente lo que su trabajo requiere. Evaluamos previa y posteriormente para verificar la mejora."
+  },
+  "platform": {
+    "eyebrow": "La plataforma",
+    "title": "Las habilidades de IA que evaluamos y enseñamos.",
+    "subtitle": "Tres cursos específicos que cubren las habilidades más importantes para obtener un valor real de la IA.",
+    "courses": [
+      {
+        "title": "Elegir y configurar herramientas de IA que mantengan los datos dentro de la empresa",
+        "body": "Cómo saber si una herramienta entrena con tus datos, dónde se aloja, cómo desactivar el entrenamiento/historial, y cómo elegir el plan empresarial con las condiciones contractuales adecuadas."
+      },
+      {
+        "title": "El informe recurrente, listo sin complicaciones.",
+        "body": "Convertir un conjunto de datos en un relato, redactar el resumen ejecutivo, transformar una tabla dinámica en tres frases que un director realmente vaya a leer. Es aquí donde el problema se siente con más intensidad."
+      },
+      {
+        "title": "Menos tiempo registrando facturas y gastos, más tiempo para lo que importa.",
+        "body": "Extracción de datos de PDF y fotos de facturas, categorización y validación del IVA integradas en el software de gestión que ya utilizan."
+      }
+    ]
+  },
+  "outcomes": {
+    "eyebrow": "¿Es esto para mi?",
+    "titlePrefix": "Buscamos trabajar con empresas que quieran ir un paso por delante en IA y",
+    "titleHighlight": " sacarle todo el partido a su equipo",
+    "titleSuffix": "."
+  },
+  "bookPilot": {
+    "eyebrow": "Empieza ahora",
+    "titlePrefix": "Prepara a tus empleados para el futuro",
+    "titleHighlight": " ahora mismo.",
+    "subtitle": "Evaluaremos lo bien que tus empleados usan realmente la IA y los formaremos específicamente para su sector y su puesto.",
+    "successTitle": "Ya estás en la lista",
+    "successBody": "Gracias. Nos pondremos en contacto para definir el grupo piloto y el proceso. Revisa tu bandeja de entrada.",
+    "fields": {
+      "fullName": "Nombre completo",
+      "fullNamePlaceholder": "Ana Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "ana@empresa.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Acme Inc.",
+      "phone": "Número de teléfono",
+      "phonePlaceholder": "+34 600 000 000",
+      "teamSize": "Tamaño del equipo",
+      "additionalInfo": "Información adicional",
+      "optional": "(opcional)"
+    },
+    "sending": "Enviando…",
+    "submit": "Envíanos un mensaje",
+    "disclaimer": "Te responderemos pronto. Tu tiempo es valioso para nosotros.",
+    "genericError": "Algo ha salido mal. Inténtalo de nuevo."
+  },
+  "footer": {
+    "copyright": "© {year} twoskill. Todos los derechos reservados.",
+    "tagline": "Creado para equipos que miden lo que importa."
+  }
+}
